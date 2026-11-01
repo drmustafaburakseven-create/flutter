@@ -1,0 +1,118 @@
+{
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": "Sofranın temel kuralları"
+    },
+    {
+      "kind": "text",
+      "text": "Bu dosya genel tarif rehberidir. Aylar kesin gıda başlama sınırı değildir. 8 ay etiketi, tarifin pütürlü veya parmak gıda sunumunu örnekler; yumurta, süt ürünü ya da buğdayı sırf bu etikete bakarak geciktirmeyin. Prematürite, yutma güçlüğü, büyüme sorunu veya bilinen alerjide kişisel klinik plan gerekir."
+    },
+    {
+      "kind": "heading",
+      "text": "Doku ve hazır oluş"
+    },
+    {
+      "kind": "text",
+      "text": "Başını kontrol edebilme, destekle güvenli dik oturma ve gıdayı yutabilme gibi hazır oluş bulguları aranır. Bebek uyanık, dik oturur ve yetişkin sürekli yanında olur. Parmakla ezilme testi yararlı bir doku kontrolüdür; boğulma riskini sıfırlamaz. Sert çiğ elma/havuç, bütün kuruyemiş, bütün nohut ve küçük yuvarlak köfteler verilmez. Balık kılçıkları pişirmeden önce ve sonra kontrol edilir."
+    },
+    {
+      "kind": "heading",
+      "text": "Alerjenleri görünür tut"
+    },
+    {
+      "kind": "text",
+      "text": "Yeni alerjenleri tek tek, küçük miktarda tanıtın. Tolere edileni yaşa uygun biçimde beslenmede sürdürün. Şiddetli egzama, bilinen alerji veya önceki reaksiyonda hekimin planını izleyin. Tarif filtresi tıbbi alerji yönetimi değildir. Nefes güçlüğü, dil/boğaz şişmesi veya belirgin halsizlikte beslemeyi durdurup 112’yi arayın."
+    },
+    {
+      "kind": "heading",
+      "text": "Pişme süreden daha önemlidir"
+    },
+    {
+      "kind": "text",
+      "text": "Ocak, fırın, parça boyu ve malzeme süresini değiştirir. Gıda termometresiyle tavukta 74 °C, kıymada 71 °C, yumurtalı yemekte 71 °C ve balıkta 63 °C iç sıcaklığını doğrulayın. Çiğ yumurta/hamur kalmasın. Sebze ve taneler kolay ezilsin. Çiğ et için ayrı gereç kullanın; tavuğu yıkamayın. Servisten önce sıcak noktaları karıştırıp ılıtın."
+    },
+    {
+      "kind": "heading",
+      "text": "Saklama ve tekrar ısıtma"
+    },
+    {
+      "kind": "text",
+      "text": "Bebeğin kaşığı değmeyen kısmı temiz, sığ kaba ayırın; hızla soğutup en geç 1–2 saat içinde buzdolabına alın. Bu set ihtiyatlı olarak 24 saat içinde kullanım önerir; buzdolabı 4 °C veya altında olmalıdır. Pirinçli yemeği 1 saat içinde soğutup buzdolabına alın ve 24 saat içinde tüketin. Sadece bir kez, her yeri buhar çıkaracak kadar yeniden ısıtın, sonra ılıtın. Bebeğin ağzı/kaşığı değen artanı saklamayın."
+    },
+    {
+      "kind": "heading",
+      "text": "Süt, enerji ve öğün düzeni"
+    },
+    {
+      "kind": "text",
+      "text": "Anne sütü veya uygun bebek formülü ilk yıl beslenmede önemini korur; ek gıda bunlara eklenir. İnek sütünü 12 aydan önce içecek olarak vermeyin. Yaklaşık 6 aydan itibaren hazır oluşla, pastörize süt yemeklerin içinde kullanılabilir. Bal ilk 12 ayda verilmez; bu tarif setinde daha sonra da tatlandırıcı olarak kullanılmaz. Açlık ve tokluk işaretlerini izleyin, bitirmeye zorlamayın. Meyveli kase ve sebze eşlikleri, demir içeren ana öğünlerin yerini sürekli almamalıdır."
+    },
+    {
+      "kind": "heading",
+      "text": "Seçici yiyen çocuk için uygulama"
+    },
+    {
+      "kind": "text",
+      "text": "Yeni yemeği küçük miktarda, tanıdığı bir yiyecekle birlikte sunun. Tüm tatları büyük bir karışımda gizlemek yerine görünür ve sade bırakın. Reddettiğinde zorlamadan başka gün yeniden teklif edin; ekran, ödül veya tatlandırıcıyla ikna etmeye çalışmayın. Kendi kaşığını tutmasına ve yumuşak dokuyu keşfetmesine fırsat verin."
+    }
+  ],
+  "sources": [
+    {
+      "title": "WHO · Bebek ve küçük çocuk beslenmesi",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/infant-and-young-child-feeding"
+    },
+    {
+      "title": "WHO 2023 tamamlayıcı beslenme kılavuzu · öneriler",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK596423/"
+    },
+    {
+      "title": "NHS · Bebeklere verilmemesi gereken gıdalar",
+      "url": "https://www.nhs.uk/baby/weaning-and-feeding/foods-to-avoid-giving-babies-and-young-children/"
+    },
+    {
+      "title": "NHS · Gıda alerjileri",
+      "url": "https://www.nhs.uk/baby/weaning-and-feeding/food-allergies-in-babies-and-young-children/"
+    },
+    {
+      "title": "NHS · Güvenli hazırlama ve sunum",
+      "url": "https://www.nhs.uk/best-start-in-life/baby/weaning/safe-weaning/preparing-food-safely/"
+    },
+    {
+      "title": "NHS · Saklama ve tekrar ısıtma",
+      "url": "https://www.nhs.uk/best-start-in-life/baby/weaning/safe-weaning/storing-and-reheating-food/"
+    },
+    {
+      "title": "FoodSafety.gov · Güvenli iç sıcaklıklar",
+      "url": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
+    },
+    {
+      "title": "NHS · İlk katı gıdalar",
+      "url": "https://www.nhs.uk/baby/weaning-and-feeding/babys-first-solid-foods/"
+    },
+    {
+      "title": "CDC · Açlık ve tokluk işaretleri",
+      "url": "https://www.cdc.gov/infant-toddler-nutrition/mealtime/signs-your-child-is-hungry-or-full.html"
+    },
+    {
+      "title": "CDC · Katı gıdayı hazırlama",
+      "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html"
+    },
+    {
+      "title": "NHS · Öğürme ve boğulma",
+      "url": "https://www.nhs.uk/best-start-in-life/baby/weaning/safe-weaning/choking-and-gagging-on-food/"
+    },
+    {
+      "title": "CDC · Bebek beslenmesinde demir",
+      "url": "https://www.cdc.gov/infant-toddler-nutrition/vitamins-minerals/iron.html"
+    },
+    {
+      "title": "FDA · Balık seçimi",
+      "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish"
+    },
+    {
+      "title": "NHS · Yaklaşık 6 aydan itibaren beslenme",
+      "url": "https://www.nhs.uk/best-start-in-life/baby/weaning/what-to-feed-your-baby/from-around-6-months/"
+    }
+  ]
+}

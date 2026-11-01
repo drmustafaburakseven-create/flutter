@@ -1,0 +1,11 @@
+{
+  "appId": "com.drmbs.minikmola",
+  "appName": "Minik Mola",
+  "webDir": "www",
+  "backgroundColor": "#fff9ef",
+  "ios": {
+    "contentInset": "never",
+    "scrollEnabled": true,
+    "backgroundColor": "#fff9ef"
+  }
+}

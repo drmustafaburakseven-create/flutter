@@ -1,0 +1,27 @@
+name: iOS derleme kontrolü
+
+on:
+  push:
+    branches: [minik-mola-app]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: En yeni Xcode'u seç
+        run: sudo xcode-select -s "$(ls -d /Applications/Xcode_*.app | sort -V | tail -1)" && xcodebuild -version
+      - name: Bağımlılıkları kur
+        run: npm ci
+      - name: Web dosyalarını iOS projesine kopyala
+        run: npx cap sync ios
+      - name: iPhone simülatörü için derle (imzasız)
+        run: |
+          xcodebuild -project ios/App/App.xcodeproj -scheme App \
+            -configuration Debug -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO build

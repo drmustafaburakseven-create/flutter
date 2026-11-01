@@ -1,0 +1,358 @@
+[
+  {
+    "id": "mola-omlet",
+    "title": "Renkli omlet şeritleri",
+    "category": "Kahvaltı",
+    "minAge": 6,
+    "ingredients": [
+      {
+        "name": "Yumurta",
+        "amount": "1 küçük (yaklaşık 45–50 g kabuksuz)",
+        "canonicalIngredientId": "yumurta",
+        "canonicalLabel": "Yumurta",
+        "form": "raw-whole",
+        "optional": false,
+        "pantryStaple": false
+      },
+      {
+        "name": "Kabak",
+        "amount": "40 g, ince rendelenmiş",
+        "canonicalIngredientId": "kabak",
+        "canonicalLabel": "Kabak",
+        "form": "raw",
+        "optional": false,
+        "pantryStaple": false
+      },
+      {
+        "name": "Havuç",
+        "amount": "30 g, soyulmuş ve çok ince rendelenmiş",
+        "canonicalIngredientId": "havuc",
+        "canonicalLabel": "Havuç",
+        "form": "raw",
+        "optional": false,
+        "pantryStaple": false
+      },
+      {
+        "name": "Zeytinyağı",
+        "amount": "½ çay ölçü kaşığı (2,5 ml)",
+        "canonicalIngredientId": "zeytinyagi",
+        "canonicalLabel": "Zeytinyağı",
+        "form": "oil",
+        "optional": false,
+        "pantryStaple": true
+      },
+      {
+        "name": "Su",
+        "amount": "2 yemek ölçü kaşığı (30 ml)",
+        "canonicalIngredientId": "su",
+        "canonicalLabel": "Su",
+        "form": "water",
+        "optional": false,
+        "pantryStaple": true
+      }
+    ],
+    "steps": [
+      {
+        "minutes": 3,
+        "title": "Hazırla",
+        "text": "Havuç ve kabağı yıkayın; havucu soyup ikisini de çok ince rendeleyin. Yumurtayı ayrı kapta beyazı ve sarısı birleşene kadar çırpın. Küçük, kapaklı yapışmaz tava hazırlayın.",
+        "cookingMinutes": 0
+      },
+      {
+        "minutes": 7,
+        "title": "Sebzeleri tamamen yumuşat",
+        "text": "Havuç ve kabağı ölçülen sudan 20 ml ile kapak altında kısık ateşte pişirin. Havuç dahil bütün sebzeler çatalla kolayca ezilmeli; sert parça kalırsa pişirmeyi sürdürün. Görünür su fazlaysa kısa süre kapaksız pişirin. Gerektiğinde az su eklemek toplam süreyi uzatabilir.",
+        "cookingMinutes": 7
+      },
+      {
+        "minutes": 8,
+        "title": "Yumurtayı tamamen pişir",
+        "text": "Yağı ve çırpılmış yumurtayı ekleyip sebzeleri eşit dağıtın. Karışımın ince bir tabaka olmasını sağlayın. Kısık ateşte kapağı kapalı pişirin; üst yüzey tamamen katılaşmalı. Tava kurursa ayırdığınız suyu birer çay kaşığı ekleyin, kurumuyorsa eklemeyin. Gerekirse omleti çevirip biraz daha pişirin. Akışkan yumurta kalmamalı; merkez en az 71 °C olmalıdır. Lastiksi sert kabuk oluşturmadan ocaktan alın.",
+        "cookingMinutes": 8
+      },
+      {
+        "minutes": 5,
+        "title": "Ilıt ve böl",
+        "text": "Başlangıç için çatalla iyice ezin ve az ılık suyla nemlendirin. Becerisi gelişmiş bebek için yumuşak şeritler ayırın.",
+        "cookingMinutes": 0
+      }
+    ],
+    "chef": "İki sebzenin rengi farklıdır; ince rende ve kapaklı ön pişirme nemli bir omlet sağlar.",
+    "fix": "Tava genişse yumurta kurur; küçük tava kullanın. Kuru veya lastiksi parçaları sunmayın.",
+    "spoon": "6 ay civarında hazır oluşta, tam pişmiş yumurta tanıtımı sonrası nemli ezme.",
+    "finger": "Kendi yemeye hazır bebek için tutması kolay yumuşak şeritler; yaş etiketi tek başına yeterli değildir.",
+    "allergens": [
+      "Yumurta"
+    ],
+    "yield": "1 küçük omlet; sunum için iştaha göre bir kısmı ayrılır",
+    "protein": true,
+    "equipment": "Yaklaşık 14–16 cm çapında kapaklı yapışmaz tava; ince rende; spatula; ince uçlu gıda termometresi.",
+    "nutritionNote": "Mevcut kabaklı omletin havuçlu uyarlamasıdır. Minik miktarda sunun; yumuşak şerit veya nemli ezme biçimini beceriye göre seçin.",
+    "prepLabel": "Küçük kapaklı tava",
+    "readyCheck": "Merkez en az 71 °C; akışkan yumurta veya sert kabak yok. Omlet yumuşak, kuru veya lastiksi değil. Havuç da tamamen yumuşak olmalı.",
+    "foodGroups": [
+      "egg",
+      "vegetable",
+      "oil"
+    ],
+    "unlockAt": 60,
+    "variationOf": "omlet",
+    "cover": "assets/rewards/mola-omlet.png"
+  },
+  {
+    "id": "mola-mucver",
+    "title": "Havuçlu lorlu mücver",
+    "category": "Ana yemek",
+    "minAge": 8,
+    "ingredients": [
+      {
+        "name": "Kabak",
+        "amount": "120 g",
+        "canonicalIngredientId": "kabak",
+        "canonicalLabel": "Kabak",
+        "form": "raw",
+        "optional": false,
+        "pantryStaple": false
+      },
+      {
+        "name": "Havuç",
+        "amount": "30 g, soyulmuş ve çok ince rendelenmiş",
+        "canonicalIngredientId": "havuc",
+        "canonicalLabel": "Havuç",
+        "form": "raw",
+        "optional": false,
+        "pantryStaple": false
+      },
+      {
+        "name": "Yumurta",
+        "amount": "1 küçük (yaklaşık 45–50 g kabuksuz)",
+        "canonicalIngredientId": "yumurta",
+        "canonicalLabel": "Yumurta",
+        "form": "raw-whole",
+        "optional": false,
+        "pantryStaple": false
+      },
+      {
+        "name": "Lor",
+        "amount": "30 g; pastörize sütten, tuzsuz",
+        "canonicalIngredientId": "lor",
+        "canonicalLabel": "Lor (pastörize sütten, tuzsuz)",
+        "form": "pasteurized-unsalted",
+        "optional": false,
+        "pantryStaple": false
+      },
+      {
+        "name": "Tam buğday unu",
+        "amount": "20 g",
+        "canonicalIngredientId": "tam-bugday",
+        "canonicalLabel": "Tam buğday unu",
+        "form": "flour",
+        "optional": false,
+        "pantryStaple": false
+      },
+      {
+        "name": "Dereotu",
+        "amount": "1 küçük dal, sapı ayrılmış",
+        "canonicalIngredientId": "dereotu",
+        "canonicalLabel": "Dereotu (taze)",
+        "form": "fresh",
+        "optional": false,
+        "pantryStaple": false
+      },
+      {
+        "name": "Zeytinyağı",
+        "amount": "1 çay ölçü kaşığı (5 ml)",
+        "canonicalIngredientId": "zeytinyagi",
+        "canonicalLabel": "Zeytinyağı",
+        "form": "oil",
+        "optional": false,
+        "pantryStaple": true
+      }
+    ],
+    "steps": [
+      {
+        "minutes": 8,
+        "title": "Fırını ve sebzeleri hazırla",
+        "text": "Fırını alt-üst 180 °C’ye açın. Kabağı yıkayıp ince rendeleyin; sert kabuk varsa soyun. Tepsiye pişirme kâğıdı serin. Rendelenmiş kabağı temiz süzgeçte elinizle hafifçe sıkın. Kupkuru hale getirmeyin. Dereotunu çok ince kıyın; lorun sert parçalarını ezin. Havucu ayrıca yıkayıp soyun ve çok ince rendeleyin.",
+        "cookingMinutes": 0
+      },
+      {
+        "minutes": 6,
+        "title": "Havucu ön pişir",
+        "text": "Rendelenmiş havucu küçük bir kapta az suyla, kapağı kapalı şekilde tamamen yumuşayana kadar pişirin. Sert parça kalırsa süreyi uzatın. Fazla serbest suyu ayırın, havucu ılıtın; harca çiğ sert havuç eklemeyin.",
+        "cookingMinutes": 6
+      },
+      {
+        "minutes": 3,
+        "title": "Harcı birleştir",
+        "text": "Yumurtayı çırpın; kabak, ön pişmiş havuç, lor, un, dereotu ve yağı katın. Kaşıkla karıştırın; kabartma tozu, tuz veya şeker eklemeyin. Harç çok akışkansa 2 dakika bekleyin; hâlâ su salıyorsa 1 çay kaşığı un ekleyin. Fazla un kurutur; bu ek bekleme toplam süreyi uzatır.",
+        "cookingMinutes": 0
+      },
+      {
+        "minutes": 2,
+        "title": "İnce yay",
+        "text": "Harcı tepsiye 6 küçük, yassı oval halinde koyun. Her parçanın ortasını yaklaşık 1 cm kalınlıkta tutun; uçları kâğıt gibi inceltmeyin. Kalın muffin kalıbı kullanmayın.",
+        "cookingMinutes": 0
+      },
+      {
+        "minutes": 22,
+        "title": "Orta rafta pişir",
+        "text": "Önceden ısınmış fırının orta rafında pişirin. Merkez ıslak hamur gibi kalmamalı, yumurtalı iç tamamen pişmeli; merkezde en az 71 °C’yi gıda termometresiyle doğrulayın. Gerekirse 3–5 dakika uzatın, sert kabuk oluşmasına izin vermeyin. Tam pişmişse yalnız renk alsın diye fırında tutmayın.",
+        "cookingMinutes": 22
+      },
+      {
+        "minutes": 7,
+        "title": "Dinlendir ve dene",
+        "text": "Tepsiden alıp ılıtın. Parmakla hafif bastırınca kolay ezildiğini kontrol edin; kuru kenarları ayırın. Bebeğin kavrama ve çiğneme becerisine göre sunun.",
+        "cookingMinutes": 0
+      }
+    ],
+    "chef": "Havucun ön pişmesi, mücverin içi pişerken sebzenin sert kalmasını önler.",
+    "fix": "Harcı akışkansa önce 2 dakika bekleyin; hâlâ su salıyorsa 1 çay kaşığı un ekleyin. Fazla un kuru, sert mücver yapar.",
+    "spoon": "Bir parçayı az ılık suyla veya daha önce tolere edilmiş yoğurtla ezerek sunun.",
+    "finger": "Dik oturup yumuşak parmak gıdayı yönetebilen bebeğe, avuçtan dışarı taşan yumuşak şeritler sunun. Ezilmeyen kabuğu çıkarın.",
+    "allergens": [
+      "Süt",
+      "Yumurta",
+      "Buğday"
+    ],
+    "yield": "Harcın tamamından 6 yassı mücver; bu üretim adedidir, tek öğün porsiyonu değildir",
+    "equipment": "Alt-üst ısıtmalı fırın; yaklaşık 25 × 35 cm düz tepsi; pişirme kâğıdı; ince rende; süzgeç; ince uçlu gıda termometresi.",
+    "nutritionNote": "Mevcut kabaklı lorlu mücverin ön pişmiş havuçlu uyarlamasıdır. Üretim adedi tek öğün porsiyonu değildir.",
+    "protein": true,
+    "prepLabel": "Fırın · ön ısıtma gerekir",
+    "readyCheck": "Yumurtalı merkezin en az 71 °C’ye ulaştığını gıda termometresiyle doğrulayın. Ilık mücver hafif parmak basıncıyla eziliyor; sert kenarlar ayrılmış. Havuçta sert parça kalmamalı.",
+    "foodGroups": [
+      "vegetable",
+      "egg",
+      "dairy",
+      "grain",
+      "herb-spice",
+      "oil"
+    ],
+    "unlockAt": 160,
+    "variationOf": "mucver",
+    "cover": "assets/rewards/mola-mucver.png"
+  },
+  {
+    "id": "mola-pankek",
+    "title": "Armutlu muzlu mini pankek",
+    "category": "Kahvaltı",
+    "minAge": 8,
+    "ingredients": [
+      {
+        "name": "Muz",
+        "amount": "35 g, olgun ve soyulmuş",
+        "canonicalIngredientId": "muz",
+        "canonicalLabel": "Muz (olgun)",
+        "form": "raw-ripe",
+        "optional": false,
+        "pantryStaple": false
+      },
+      {
+        "name": "Armut",
+        "amount": "15 g, çekirdeksiz ve çok yumuşak ezme halinde",
+        "canonicalIngredientId": "armut",
+        "canonicalLabel": "Armut",
+        "form": "soft-mashed",
+        "optional": false,
+        "pantryStaple": false
+      },
+      {
+        "name": "Yumurta",
+        "amount": "1 küçük, yaklaşık 45–50 g kabuksuz",
+        "canonicalIngredientId": "yumurta",
+        "canonicalLabel": "Yumurta",
+        "form": "raw-whole",
+        "optional": false,
+        "pantryStaple": false
+      },
+      {
+        "name": "Yulaf",
+        "amount": "20 g, un gibi öğütülmüş",
+        "canonicalIngredientId": "yulaf",
+        "canonicalLabel": "Yulaf (ince öğütülmüş)",
+        "form": "finely-ground",
+        "optional": false,
+        "pantryStaple": false
+      },
+      {
+        "name": "Zeytinyağı",
+        "amount": "½ çay ölçü kaşığı (2,5 ml), tavayı ince yağlamak için",
+        "canonicalIngredientId": "zeytinyagi",
+        "canonicalLabel": "Zeytinyağı",
+        "form": "oil",
+        "optional": false,
+        "pantryStaple": true
+      },
+      {
+        "name": "Su",
+        "amount": "Gerekirse 1–2 çay ölçü kaşığı (5–10 ml)",
+        "canonicalIngredientId": "su",
+        "canonicalLabel": "Su",
+        "form": "water",
+        "optional": true,
+        "pantryStaple": true
+      }
+    ],
+    "steps": [
+      {
+        "minutes": 5,
+        "title": "Harcı hazırla",
+        "text": "Muz ve çok yumuşak armudu çatalla tamamen ezin. Armut sertse önce az suyla pişirip yumuşatın ve ılıtın; bu ek hazırlık toplam süreyi uzatır. İri, kaygan parçalar bırakmayın. Yumurtayı ayrı küçük kapta kırın, çırpın ve meyve ezmesine katın. Yulaf ununu ekleyip kaşıkla karıştırın. Harç kaşıktan ağır akmalı; çok koyuysa 1 çay kaşığı su ekleyin. Şeker, bal, pekmez veya kabartma tozu eklemeyin.",
+        "cookingMinutes": 0
+      },
+      {
+        "minutes": 3,
+        "title": "Dinlendir ve tavayı hazırla",
+        "text": "Harcı bekletirken yapışmaz tavayı kısık ateşte ısıtın. Yağı fırçayla ince tabaka yayın; tava duman çıkarmamalı. Bekledikten sonra harç akmayacak kadar koyuysa 1 çay kaşığı (5 ml) su daha karıştırın; toplam ek su 2 çay kaşığını (10 ml) geçmesin.",
+        "cookingMinutes": 0
+      },
+      {
+        "minutes": 4,
+        "title": "İlk yüz",
+        "text": "Tavaya 4 küçük oval pankek için harcı paylaştırın, kalınlığı yaklaşık 5–7 mm olsun. Kısık ateşte pişirin; kenarı tutup altı hafif renk alınca çevirin. Parçalar birbirine değmeden sığmalı. Sığmıyorsa kalan harcı ayrı partide pişirin; her ek parti yaklaşık 8 dakika ekler.",
+        "cookingMinutes": 4
+      },
+      {
+        "minutes": 4,
+        "title": "İkinci yüz ve merkez",
+        "text": "Diğer yüzü pişirin. Birini keserek merkezinde ıslak yumurta veya çiğ harç olmadığını kontrol edin; yumurtalı iç için en az 71 °C hedefleyin. Gerekirse kısık ateşte ek süre verin. Dışı koyulaşırken içi ıslaksa ateşi azaltın; pişmeyi hızlandırmak için ateşi yükseltmeyin.",
+        "cookingMinutes": 4
+      },
+      {
+        "minutes": 5,
+        "title": "Yumuşaklığını dene",
+        "text": "Tel yerine tabakta kısa ılıtın; aşırı kurutmayın. Parmağın hafif basıncıyla ezilmeli. Koyu, sert kızarmış kenarları çıkarın.",
+        "cookingMinutes": 0
+      }
+    ],
+    "chef": "Toplam meyve miktarını artırmadan bir kısmını armutla değiştirmek farklı bir tat denemesi sağlar.",
+    "fix": "Dışı hızla koyulaşıyor ama içi ıslaksa ateşi azaltın, daha ince dökün; süreyi kısaltmayın.",
+    "spoon": "Ilık pankeki tanınmış yoğurt veya az suyla iyice yumuşatıp ezin.",
+    "finger": "Yumuşak parmak gıdayı yönetebilen bebeğe avuçtan taşan geniş şeritler; küçük yuvarlak veya kuru parçalar sunmayın.",
+    "allergens": [
+      "Yumurta",
+      "Yulaf"
+    ],
+    "yield": "Harcın tamamından 4 ince pankek; bu üretim adedidir, tek öğün porsiyonu değildir",
+    "equipment": "Yaklaşık 24–26 cm çapında yapışmaz tava; ince spatula; yağ fırçası; ince uçlu gıda termometresi.",
+    "nutritionNote": "Mevcut muzlu yulaflı pankekin armutlu uyarlamasıdır. İlave şeker veya bal eklenmez; tam pişme ve yumuşak sunum kontrol edilir.",
+    "protein": true,
+    "possibleAllergens": [
+      "Süt"
+    ],
+    "note": "Ana harç süt içermez. Kaşık sunumunda isteğe bağlı yoğurt kullanılırsa süt de alerjendir; suyla yumuşatma seçeneği vardır.",
+    "prepLabel": "Tava · ek parti süreyi uzatır",
+    "readyCheck": "Yumurtalı merkez en az 71 °C; ıslak yumurta veya çiğ harç yok. Ilık pankek hafif parmak basıncıyla eziliyor; sert kenarlar ayrılmış.",
+    "foodGroups": [
+      "fruit",
+      "egg",
+      "grain",
+      "oil"
+    ],
+    "unlockAt": 300,
+    "variationOf": "pankek",
+    "cover": "assets/rewards/mola-pankek.png"
+  }
+]

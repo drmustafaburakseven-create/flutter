@@ -1,0 +1,4 @@
+(function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.MMFlow=api})(typeof globalThis!=='undefined'?globalThis:this,function(){
+function pages(text,max=230){const sentences=String(text).match(/[^.!?]+[.!?]+(?:\s|$)|[^.!?]+$/g)||[String(text)];const out=[];let part='';for(const sentence of sentences){const words=sentence.trim().split(/\s+/);for(const word of words){if(part.length+word.length+1>max&&part){out.push(part);part=''}part+=(part?' ':'')+word}}if(part)out.push(part);return out.length?out:[''];}
+function advance(steps,position,dir){let {step,page}=position;const chunks=pages(steps[step].text);if(dir>0){if(page<chunks.length-1)page++;else if(step<steps.length-1){step++;page=0}}else if(page>0)page--;else if(step>0){step--;page=pages(steps[step].text).length-1}return {step,page};}
+return {pages,advance};});
