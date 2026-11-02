@@ -1,0 +1,58 @@
+# Minik Mola iPhone uygulamasını Codemagic'in Mac bilgisayarlarında derler,
+# imzalar ve TestFlight'a yükler. Mac gerekmez.
+#
+# Codemagic'te bir kez yapılacaklar (ayrıntılar README.md içinde):
+#   1. Team settings > Integrations > App Store Connect: API anahtarını
+#      "Minik Mola" adıyla ekleyin.
+#   2. Team settings > Global variables and secrets: "minik_mola" grubuna
+#      CERTIFICATE_PRIVATE_KEY değişkenini (gizli olarak) ekleyin.
+
+workflows:
+  ios-testflight:
+    name: Minik Mola · iPhone (TestFlight)
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    integrations:
+      app_store_connect: Minik Mola
+    environment:
+      groups:
+        - minik_mola
+      vars:
+        BUNDLE_ID: com.drmbs.minikmola
+        XCODE_PROJECT: ios/App/App.xcodeproj
+        XCODE_SCHEME: App
+      node: 22
+      xcode: latest
+    scripts:
+      - name: Bağımlılıkları kur
+        script: npm ci
+      - name: Web dosyalarını iOS projesine kopyala
+        script: npx cap sync ios
+      - name: İmza dosyalarını hazırla
+        script: |
+          if [ -z "$CERTIFICATE_PRIVATE_KEY" ]; then
+            echo "CERTIFICATE_PRIVATE_KEY bulunamadı. README.md içindeki 4. adımı yapın."
+            exit 1
+          fi
+          keychain initialize
+          app-store-connect fetch-signing-files "$BUNDLE_ID" \
+            --type IOS_APP_STORE \
+            --create
+          keychain add-certificates
+          xcode-project use-profiles --project "$XCODE_PROJECT"
+      - name: Sürüm numarasını artır
+        script: |
+          sed -i '' "s/CURRENT_PROJECT_VERSION = [0-9]*;/CURRENT_PROJECT_VERSION = $BUILD_NUMBER;/" \
+            "$XCODE_PROJECT/project.pbxproj"
+      - name: Uygulamayı derle (.ipa)
+        script: |
+          xcode-project build-ipa \
+            --project "$XCODE_PROJECT" \
+            --scheme "$XCODE_SCHEME"
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true
