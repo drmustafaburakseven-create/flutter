@@ -19,7 +19,7 @@ const write = (k, v) => {
   try {
     localStorage.setItem("mm-preview-" + k, JSON.stringify(v));
   } catch {
-    toast("Bu tarayıcıda değişiklikler kalıcı kaydedilemiyor.");
+    toast("Değişiklikler bu cihazda kalıcı kaydedilemiyor.");
   }
 };
 let triedRecipesOnly = false;
@@ -103,7 +103,6 @@ applyDesign();
 $("#detail").addEventListener("close", () =>
   $("#detail").classList.remove("cook-mode"),
 );
-$("#molagames").onclick = () => toast("Bir Mola — Yakında");
 $("#settings").onclick = () => $("#settingsdialog").showModal();
 document.querySelectorAll("dialog").forEach((d) =>
   d.addEventListener("click", (e) => {
@@ -443,7 +442,7 @@ Promise.all([
   })
   .catch(() => {
     $("#content").innerHTML =
-      '<div class="empty"><b>Tarifler yüklenemedi.</b>Bağlantını kontrol edip sayfayı yenile.<button class="primary" onclick="location.reload()">Yeniden dene</button></div>';
+      '<div class="empty"><b>Tarifler yüklenemedi.</b>Uygulamayı kapatıp yeniden açmayı dene.<button class="primary" onclick="location.reload()">Yeniden dene</button></div>';
   });
 
 let mealLimit = 999,
@@ -542,7 +541,7 @@ function render() {
 function openProfiles() {
   const p = activeProfile();
   $("#profilebody").innerHTML =
-    `<div class="detailwrap"><button class="close" id="closeprofile" aria-label="Kapat">×</button><span class="eyebrow mini">MİNİK MOLAMIZ</span><h2>Çocuk profilleri</h2><p class="muted">Her çocuğun sofrası ve gelişimi ayrı.</p>${profiles.map((x) => `<button class="profile-row" data-editprofile="${esc(x.id)}"><span class="avatar">${esc(x.name[0])}</span><span><b>${esc(x.name)}</b><small>${MMLogic.ageMonths(x.birth)} aylık · ${x.id === activeProfileId ? "Seçili profil" : "Düzenle / seç"}</small></span><span>›</span></button>`).join("")}<button class="primary" id="newprofile">＋ Çocuk profili ekle</button><p class="note">Bilgiler yalnızca bu tarayıcıda saklanır. Başka cihazlarla eşitlenmez; tarayıcı verilerini silersen kaybolur. Tam ad yerine takma ad kullanabilirsin.</p></div>`;
+    `<div class="detailwrap"><button class="close" id="closeprofile" aria-label="Kapat">×</button><span class="eyebrow mini">MİNİK MOLAMIZ</span><h2>Çocuk profilleri</h2><p class="muted">Her çocuğun sofrası ve gelişimi ayrı.</p>${profiles.map((x) => `<button class="profile-row" data-editprofile="${esc(x.id)}"><span class="avatar">${esc(x.name[0])}</span><span><b>${esc(x.name)}</b><small>${MMLogic.ageMonths(x.birth)} aylık · ${x.id === activeProfileId ? "Seçili profil" : "Düzenle / seç"}</small></span><span>›</span></button>`).join("")}<button class="primary" id="newprofile">＋ Çocuk profili ekle</button><p class="note">Bilgiler yalnızca bu cihazda saklanır, internete gönderilmez. Başka cihazlarla eşitlenmez; uygulamayı silersen kaybolur. Tam ad yerine takma ad kullanabilirsin.</p></div>`;
   $("#closeprofile").onclick = () => $("#profiledialog").close();
   $("#newprofile").onclick = () => editProfile();
   document
@@ -597,7 +596,7 @@ function editProfile(p = null) {
       .map((r) => `<span>${esc(r.title)}</span>`)
       .join(
         "",
-      )}</div><h3>Yeme becerileri</h3>${skillFields(p)}<p class="note">Bu bir gelişim testi değildir. Her becerinin temposu değişebilir. Bir sonraki kısa kontrol, son beceri güncellemesinden bir ay sonra siteyi açtığında gösterilir.</p><button class="primary" type="submit">Kaydet ve bu profili kullan</button>${!isNew ? '<button class="textbutton danger" type="button" id="deleteprofile">Bu profili sil</button>' : ""}</form></div>`;
+      )}</div><h3>Yeme becerileri</h3>${skillFields(p)}<p class="note">Bu bir gelişim testi değildir. Her becerinin temposu değişebilir. Bir sonraki kısa kontrol, son beceri güncellemesinden bir ay sonra uygulamayı açtığında gösterilir.</p><button class="primary" type="submit">Kaydet ve bu profili kullan</button>${!isNew ? '<button class="textbutton danger" type="button" id="deleteprofile">Bu profili sil</button>' : ""}</form></div>`;
   $("#profilesback").onclick = openProfiles;
   $("#profileform").onsubmit = (e) => {
     e.preventDefault();
@@ -948,6 +947,10 @@ function timerControls(r, i) {
 function persistTimer() {
   write("cookingTimer", cookingTimer);
   renderTimerBar();
+  window.MMNative?.syncTimer(
+    cookingTimer,
+    recipes.find((r) => r.id === cookingTimer?.recipe)?.title,
+  );
 }
 function bindTimerControls() {
   if (!$("#timerstart")) return;
@@ -1110,7 +1113,7 @@ async function openRecipeStory(r) {
       const link = d.querySelector("[data-download]");
       link.href = url;
       link.download = file.name;
-      link.hidden = false;
+      link.hidden = !!window.MMNative?.native;
       d.querySelector("[data-status]").textContent = "Görsel hazır";
       const share = d.querySelector("[data-share]");
       share.disabled = false;
@@ -1122,7 +1125,9 @@ async function openRecipeStory(r) {
             if (e.name !== "AbortError")
               toast("Paylaşım açılamadı; görseli indirebilirsin.");
           }
-        } else link.click();
+        } else if (window.MMNative?.native)
+          toast("Görsele basılı tutup Fotoğraflar’a kaydedebilirsin.");
+        else link.click();
       };
     } catch {
       if (!closed)
